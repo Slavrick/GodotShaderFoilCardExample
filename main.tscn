@@ -1,0 +1,1035 @@
+[gd_scene load_steps=95 format=3 uid="uid://biu67b8x8d30p"]
+
+[ext_resource type="Texture2D" uid="uid://bq6xhg18why3n" path="res://icon.svg" id="2_7p484"]
+[ext_resource type="Script" path="res://Scripts/holo.gd" id="3_1bs0a"]
+[ext_resource type="Texture2D" uid="uid://d1ab6djixacg" path="res://Sprites/Normals/NormalMap.png" id="5_4qiv3"]
+[ext_resource type="Texture2D" uid="uid://csusai8ffabgk" path="res://Sprites/Normals/7813-normal.jpg" id="7_m8ug8"]
+[ext_resource type="Shader" path="res://Shaders/card_scroll.gdshader" id="7_wkg87"]
+[ext_resource type="Texture2D" uid="uid://be8a7lflaeumf" path="res://Sprites/mask - Copy.bmp" id="8_bnqxv"]
+[ext_resource type="Shader" path="res://Shaders/card.gdshader" id="8_q24nc"]
+[ext_resource type="Texture2D" uid="uid://byq0i61pyrni1" path="res://Sprites/Rainbow-gradient-fully-saturated.svg.png" id="9_o18fj"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_iueri"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_8y0hg"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_iueri")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1nfti"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(64, 128)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 0.5
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.325
+shader_parameter/direction = 0.5
+shader_parameter/gradient = ExtResource("9_o18fj")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_8y0hg")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ceqn6"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_k0pd1"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1i4un"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_k0pd1")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jkkyh"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(1296, 129)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 0.5
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.325
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_ceqn6")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_1i4un")
+
+[sub_resource type="Gradient" id="Gradient_epaif"]
+offsets = PackedFloat32Array(0.303279, 0.557377, 0.762295)
+colors = PackedColorArray(0.329158, 0.329158, 0.329158, 1, 1, 1, 1, 1, 0.505344, 0.505344, 0.505344, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_t6tku"]
+gradient = SubResource("Gradient_epaif")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_kggwa"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_4rv2i"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_kggwa")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nni4t"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(1439, 128)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 0.5
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.325
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("GradientTexture1D_t6tku")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_4rv2i")
+
+[sub_resource type="Gradient" id="Gradient_brleq"]
+offsets = PackedFloat32Array(0, 0.532787, 1)
+colors = PackedColorArray(0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_fxeji"]
+gradient = SubResource("Gradient_brleq")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_vn3s4"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_n8whs"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_vn3s4")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wo0wf"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(1583, 127)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 0.5
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.494
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("GradientTexture1D_fxeji")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_n8whs")
+
+[sub_resource type="Gradient" id="Gradient_6lru0"]
+offsets = PackedFloat32Array(0, 0.245902, 0.5, 0.721311, 1)
+colors = PackedColorArray(1, 0, 0, 1, 1, 1, 0, 1, 1, 0.54902, 0, 0.427451, 1, 1, 0, 1, 1, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_rks3r"]
+gradient = SubResource("Gradient_6lru0")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_fnm0q"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_w8b78"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_fnm0q")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l1y1t"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(1715, 126)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 0.5
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.494
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("GradientTexture1D_rks3r")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_w8b78")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ivwsm"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_mbq8r"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_u8g4r"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_mbq8r")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8udov"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(1181, 380)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 0.5
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.2
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_ivwsm")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_u8g4r")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q1i2n"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_kinxn"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_m2rkm"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_kinxn")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lr7sq"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(980, 377)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 0.5
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 1.0
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_q1i2n")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_m2rkm")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_btxs2"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_8bns7"]
+frequency = 0.3804
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_e8o73"]
+noise = SubResource("FastNoiseLite_8bns7")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_p7gkq"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1fb0i"]
+as_normal_map = true
+noise = SubResource("FastNoiseLite_p7gkq")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j08ts"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(438, 130)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 0.5
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.325
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_btxs2")
+shader_parameter/noise = SubResource("NoiseTexture2D_e8o73")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_1fb0i")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5ynxe"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_t108j"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1n7u0"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_t108j")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o7fxk"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(206, 128)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.211765, 0.239216, 0.321569, 1)
+shader_parameter/threshold = 0.1
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.078
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_5ynxe")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_1n7u0")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_48xvv"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_jesf4"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_f4gak"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_jesf4")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v6ll5"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(588, 384)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.211765, 0.239216, 0.321569, 1)
+shader_parameter/threshold = 2.0
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 0.1
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.078
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_48xvv")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_f4gak")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vqwqk"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_xc8dl"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_w0mmh"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_xc8dl")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hmvrv"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(728, 387)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.211765, 0.239216, 0.321569, 1)
+shader_parameter/threshold = 0.1
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.078
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_vqwqk")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_w0mmh")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mxtos"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_6nsjs"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_bp5m8"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_6nsjs")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fjavi"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(721, 519)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.211765, 0.239216, 0.321569, 1)
+shader_parameter/threshold = 0.1
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 5.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.078
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_mxtos")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_bp5m8")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8kblo"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_wihxy"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1aujp"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_wihxy")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rebnp"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(582, 519)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.211765, 0.239216, 0.321569, 1)
+shader_parameter/threshold = 0.1
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 0.1
+shader_parameter/scroll = 5.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.078
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_8kblo")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_1aujp")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s5t0c"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_77sck"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_mneva"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_77sck")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nic3u"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(187, 321)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.539
+shader_parameter/max_distance = 100.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 0.5
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.325
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_s5t0c")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_mneva")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lspey"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ai081"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1kttq"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_ai081")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_by8a5"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(64, 319)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 100.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 0.5
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.325
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_lspey")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_1kttq")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bh5mj"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_30dvf"]
+shader = ExtResource("8_q24nc")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(93, 532)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 100.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 0.5
+shader_parameter/fuzziness = 0.94
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/effect_alpha_mult = 0.325
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_bh5mj")
+shader_parameter/normal_map = ExtResource("5_4qiv3")
+
+[sub_resource type="Gradient" id="Gradient_umpx0"]
+offsets = PackedFloat32Array(0, 0.245902, 0.663934, 1)
+colors = PackedColorArray(0, 1, 1, 1, 0.647059, 0, 1, 1, 0, 0.435294, 1, 1, 0, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_33o42"]
+gradient = SubResource("Gradient_umpx0")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xe06q"]
+shader = ExtResource("7_wkg87")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(101, 770)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.211765, 0.239216, 0.321569, 1)
+shader_parameter/threshold = 2.0
+shader_parameter/fuzziness = 0.12
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 0.5
+shader_parameter/normal_x_offset = 0.0
+shader_parameter/normal_y_offset = 0.0
+shader_parameter/normal_scroll_speed = 0.0
+shader_parameter/effect_alpha_mult = 0.123
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("GradientTexture1D_33o42")
+shader_parameter/normal_map = ExtResource("7_m8ug8")
+
+[sub_resource type="Gradient" id="Gradient_cbuq2"]
+offsets = PackedFloat32Array(0, 0.245902, 0.663934, 1)
+colors = PackedColorArray(0, 1, 1, 1, 0.647059, 0, 1, 1, 0, 0.435294, 1, 1, 0, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xnq4q"]
+gradient = SubResource("Gradient_cbuq2")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y2nt0"]
+load_path = "res://.godot/imported/7813-normal.jpg-448776bbc1e9d59fb543ed5af7f55e43.ctex"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o47os"]
+shader = ExtResource("7_wkg87")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(442, 755)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.211765, 0.239216, 0.321569, 1)
+shader_parameter/threshold = 2.0
+shader_parameter/fuzziness = 0.12
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 0.5
+shader_parameter/normal_x_offset = 0.0
+shader_parameter/normal_y_offset = 0.0
+shader_parameter/normal_scroll_speed = 0.7
+shader_parameter/effect_alpha_mult = 0.123
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("GradientTexture1D_xnq4q")
+shader_parameter/normal_map = SubResource("CompressedTexture2D_y2nt0")
+
+[sub_resource type="Gradient" id="Gradient_t4811"]
+offsets = PackedFloat32Array(0, 0.245902, 0.663934, 1)
+colors = PackedColorArray(0, 1, 1, 1, 0.647059, 0, 1, 1, 0, 0.435294, 1, 1, 0, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_dc08f"]
+gradient = SubResource("Gradient_t4811")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l81dp"]
+load_path = "res://.godot/imported/7813-normal.jpg-448776bbc1e9d59fb543ed5af7f55e43.ctex"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wdg6h"]
+shader = ExtResource("7_wkg87")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(255, 767)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.211765, 0.239216, 0.321569, 1)
+shader_parameter/threshold = 2.0
+shader_parameter/fuzziness = 0.12
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 2.0
+shader_parameter/normal_x_offset = 0.0
+shader_parameter/normal_y_offset = 0.0
+shader_parameter/normal_scroll_speed = 0.0
+shader_parameter/effect_alpha_mult = 0.123
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("GradientTexture1D_dc08f")
+shader_parameter/normal_map = SubResource("CompressedTexture2D_l81dp")
+
+[sub_resource type="Shader" id="Shader_d3syl"]
+code = "shader_type canvas_item;
+
+group_uniforms code_set_parameters;
+uniform vec2 mouse_position;
+uniform vec2 sprite_position;
+
+group_uniforms _3D_Perspective;
+uniform float fov : hint_range(1, 179) = 90;
+uniform bool cull_back = true;
+//uniform float y_rot : hint_range(-180, 180) = 0.0; From original shader -- https://godotshaders.com/shader/2d-perspective/
+//uniform float x_rot : hint_range(-180, 180) = 0.0;
+//Amount to inset the image by, a higher value means the image is smaller but less likely to go outside of the \"bounds\" of the original sprite size.
+uniform float inset : hint_range(0, 1) = 0.0;
+//Max tilt. 2 means the sprite goes all the way to one side, and the plane is parrelel to the 2d camera.
+uniform float max_tilt : hint_range(0,2.0) = 1.4;
+//the Max distance from the center of the sprite that results in the max tilt.
+uniform float max_distance = 50.0;
+
+varying flat vec2 o;
+varying vec3 p;
+
+group_uniforms foil_uniforms;
+//The color of the foil.
+uniform vec3 foilcolor : source_color;
+uniform float threshold : hint_range(0.0, 2.0, 0.1) = 0.1 ;
+uniform float fuzziness : hint_range(0.0,1.0,.01) = 0.1;
+uniform float period = 1;
+uniform float scroll = 1;
+uniform float normal_strength = .1;
+uniform float normal_x_offset = 0.0;
+uniform float normal_y_offset = 0.0;
+uniform float normal_scroll_speed = 0.0;
+uniform float effect_alpha_mult : hint_range(0,1) = 1.0;
+uniform float direction : hint_range(0,1.0) = 0.5;
+
+uniform sampler2D foil_mask;
+uniform sampler2D gradient;
+uniform sampler2D noise;
+uniform sampler2D normal_map;
+
+varying smooth vec2 direction_to;
+varying smooth vec2 passthrough;
+
+float inverse_lerp(float v, float a, float b){
+	return (v - a) / (b - a);
+}
+
+float color_mask(vec3 mask, vec3 color, float mask_threshold, float mask_fuzziness){
+	float d = distance(mask,color);
+	return clamp(1.0 - smoothstep(mask_threshold,mask_threshold + mask_fuzziness, d),0.0,1.0);
+}
+
+mat2 rotate2d(float _angle){
+    return mat2(vec2(cos(_angle),-sin(_angle)),vec2(sin(_angle),cos(_angle)));
+}
+
+vec3 rotate_vector(vec3 v, float angleX, float angleY, float magnitude) {
+	// Create rotation matrices for X and Y axes.
+	mat3 rotX = mat3(
+		vec3(1.0, 0.0, 0.0),
+		vec3(0.0, cos(angleX), -sin(angleX)),
+		vec3(0.0, sin(angleX), cos(angleX))
+	);
+	mat3 rotY = mat3(
+		vec3(cos(angleY), 0.0, sin(angleY)),
+		vec3(0.0, 1.0, 0.0),
+		vec3(-sin(angleY), 0.0, cos(angleY))
+	);
+	// Combine the rotations. Order matters! Y then X is common.
+	mat3 combinedRotation = rotX * rotY; // Apply Y rotation first, then X.
+	// Rotate the vector.
+	vec3 rotatedVector = combinedRotation * v;
+	// Apply magnitude
+	rotatedVector = normalize(rotatedVector) * magnitude;
+	return rotatedVector;
+}
+
+void vertex(){
+	direction_to = mouse_position - sprite_position + 1.0;
+	float d = length( direction_to );
+	float magnitude = min( max_tilt , d / max_distance);
+	float angle = atan(direction_to.x,direction_to.y);
+	float x_rota = abs(angle) / PI;
+	float y_rota = abs(atan(direction_to.y,direction_to.x)) / PI;
+	
+	float sin_b = sin( (-y_rota + .5) * magnitude * (PI / 2.0) );
+	float cos_b = cos( (-y_rota + .5) * magnitude * (PI / 2.0) );
+	float sin_c = sin( (x_rota - .5) * magnitude * (PI / 2.0) );
+	float cos_c = cos( (x_rota - .5) * magnitude * (PI / 2.0) );
+	
+	mat3 inv_rot_mat;
+	inv_rot_mat[0][0] = cos_b;
+	inv_rot_mat[0][1] = 0.0;
+	inv_rot_mat[0][2] = -sin_b;
+	
+	inv_rot_mat[1][0] = sin_b * sin_c;
+	inv_rot_mat[1][1] = cos_c;
+	inv_rot_mat[1][2] = cos_b * sin_c;
+	
+	inv_rot_mat[2][0] = sin_b * cos_c;
+	inv_rot_mat[2][1] = -sin_c;
+	inv_rot_mat[2][2] = cos_b * cos_c;
+	
+	
+	float t = tan(fov / 360.0 * PI);
+	p = inv_rot_mat * vec3((UV - 0.5), 0.5 / t);
+	float v = (0.5 / t) + 0.5;
+	p.xy *= v * inv_rot_mat[2].z;
+	o = v * inv_rot_mat[2].xy;
+
+	VERTEX += (UV - 0.5) / TEXTURE_PIXEL_SIZE * t * (1.0 - inset);
+}
+
+void fragment() {
+	//culls the back somehow
+	if (cull_back && p.z <= 0.0) discard;
+	//get the UV from based on the tilt from the vertex function
+	vec2 uv = (p.xy / p.z).xy - o;
+	vec2 adjusted_uv = uv + 0.5;
+	//get the color texture
+	vec4 albedo_tex = texture(TEXTURE, adjusted_uv);
+	COLOR = albedo_tex;
+	
+	vec4 mask = texture(foil_mask,adjusted_uv);
+	float texture_similarity = color_mask(foilcolor,albedo_tex.rgb,threshold,fuzziness);
+	
+	float d = length( direction_to ) + 1.0;
+	float magnitude = min( max_tilt , d / max_distance);
+	float angle = atan(direction_to.x,direction_to.y);
+	float x_rota = abs(angle) / PI;
+	float y_rota = abs(atan(direction_to.y,direction_to.x)) / PI;
+	
+	vec3 normal_map_tex = texture(normal_map,mod(adjusted_uv + vec2(normal_x_offset ,normal_y_offset - TIME * normal_scroll_speed),1.0)).rgb * 2.0 - 1.0;
+	vec3 normal = rotate_vector(vec3(1.0,1.0,1.0),x_rota,y_rota,magnitude * magnitude);
+	normal = rotate_vector(normal,normal_map_tex.x, normal_map_tex.y, length(normal_map_tex)) * normal_strength;
+	
+	vec4 noise_tex = texture(noise,adjusted_uv);
+	
+	vec2 gradiant_sample = vec2((0.25+(normal.y*direction*2.0-normal.x*(1.0-direction)*2.0)/2.0+(uv.y*direction+uv.x*(1.0-direction))/2.0), 0.0);
+	gradiant_sample += vec2(magnitude,0.0) * scroll;
+	gradiant_sample = mod((gradiant_sample+adjusted_uv * period),1.0);
+	vec4 gradient_tex = texture(gradient, gradiant_sample);
+	float strength = effect_alpha_mult * mask.r * texture_similarity;
+	
+	COLOR.rgb = mix(albedo_tex.rgb, gradient_tex.rgb*(noise_tex.rgb*2.0), strength);//(effect_alpha_mult-length(albedo_tex))*gradient_tex.a*effect_alpha_mult);
+	COLOR.a *= step(max(abs(uv.x), abs(uv.y)), 0.5);
+}"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yu2bb"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_jstga"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ofvfr"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_jstga")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i2n2n"]
+shader = SubResource("Shader_d3syl")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(700, 131)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 2.0
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/normal_x_offset = 0.0
+shader_parameter/normal_y_offset = 0.0
+shader_parameter/normal_scroll_speed = 0.0
+shader_parameter/effect_alpha_mult = 0.078
+shader_parameter/direction = 0.5
+shader_parameter/gradient = SubResource("CompressedTexture2D_yu2bb")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_ofvfr")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pbmid"]
+load_path = "res://.godot/imported/Rainbow-gradient-fully-saturated.svg.png-e4ec3158bb32d1c635a8ccd590a0b51c.ctex"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_kebwg"]
+frequency = 0.0142
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_x8pcp"]
+as_normal_map = true
+bump_strength = 3.4
+noise = SubResource("FastNoiseLite_kebwg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nbc7l"]
+shader = SubResource("Shader_d3syl")
+shader_parameter/mouse_position = Vector2(307.362, 301.239)
+shader_parameter/sprite_position = Vector2(828, 139)
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/inset = 0.0
+shader_parameter/max_tilt = 1.0
+shader_parameter/max_distance = 500.0
+shader_parameter/foilcolor = Color(0.972549, 0.984314, 0.992157, 1)
+shader_parameter/threshold = 2.0
+shader_parameter/fuzziness = 0.54
+shader_parameter/period = 1.0
+shader_parameter/scroll = 1.0
+shader_parameter/normal_strength = 3.16
+shader_parameter/normal_x_offset = 0.0
+shader_parameter/normal_y_offset = 0.0
+shader_parameter/normal_scroll_speed = 0.0
+shader_parameter/effect_alpha_mult = 0.078
+shader_parameter/direction = 0.5
+shader_parameter/foil_mask = ExtResource("8_bnqxv")
+shader_parameter/gradient = SubResource("CompressedTexture2D_pbmid")
+shader_parameter/normal_map = SubResource("NoiseTexture2D_x8pcp")
+
+[node name="Main" type="Node2D"]
+
+[node name="Icon8" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_1nfti")
+position = Vector2(64, 128)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon25" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_jkkyh")
+position = Vector2(1296, 129)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon26" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_nni4t")
+position = Vector2(1439, 128)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon27" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_wo0wf")
+position = Vector2(1583, 127)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon28" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_l1y1t")
+position = Vector2(1715, 126)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon23" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_8udov")
+position = Vector2(1181, 380)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon24" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_lr7sq")
+position = Vector2(980, 377)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon21" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_j08ts")
+position = Vector2(438, 130)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon12" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_o7fxk")
+position = Vector2(206, 128)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon13" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_v6ll5")
+position = Vector2(588, 384)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon16" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_hmvrv")
+position = Vector2(728, 387)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon17" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_fjavi")
+position = Vector2(721, 519)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon18" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_rebnp")
+position = Vector2(582, 519)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon15" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_nic3u")
+position = Vector2(187, 321)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon14" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_by8a5")
+position = Vector2(64, 319)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon20" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_30dvf")
+position = Vector2(93, 532)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon9" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_xe06q")
+position = Vector2(101, 770)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon22" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_o47os")
+position = Vector2(442, 755)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon19" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_wdg6h")
+position = Vector2(255, 767)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon10" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_i2n2n")
+position = Vector2(700, 131)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="Icon11" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_nbc7l")
+position = Vector2(828, 139)
+texture = ExtResource("2_7p484")
+script = ExtResource("3_1bs0a")
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="."]
+offset_left = 878.0
+offset_top = 280.0
+offset_right = 1358.0
+offset_bottom = 320.0
+text = "High Effective Alpha Mult -- Low Effective Alpha Mult"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 700.0
+offset_top = 3.0
+offset_right = 876.0
+offset_bottom = 43.0
+text = "Mask Example
+"
+
+[node name="RichTextLabel10" type="RichTextLabel" parent="."]
+offset_left = 1399.0
+offset_top = 15.0
+offset_right = 1575.0
+offset_bottom = 55.0
+text = "Gradiant Examples
+"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+offset_left = 535.0
+offset_top = 274.0
+offset_right = 767.0
+offset_bottom = 314.0
+text = "Low Period -- High Period
+"
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+offset_left = 400.0
+offset_top = 358.0
+offset_right = 601.0
+offset_bottom = 526.0
+text = "Low Scroll
+
+
+
+
+
+High Scroll
+"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 64.0
+offset_right = 240.0
+offset_bottom = 40.0
+text = "Foil Color Examples
+"
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="."]
+offset_left = 380.0
+offset_top = 17.0
+offset_right = 556.0
+offset_bottom = 57.0
+text = "Noise added "
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+offset_left = 48.0
+offset_top = 216.0
+offset_right = 224.0
+offset_bottom = 256.0
+text = "Tilt Example"
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="."]
+offset_left = 67.0
+offset_top = 657.0
+offset_right = 297.0
+offset_bottom = 697.0
+text = "Normal Strength Example"
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="."]
+offset_left = 378.0
+offset_top = 657.0
+offset_right = 608.0
+offset_bottom = 697.0
+text = "Added Scroll"
